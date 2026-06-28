@@ -2,8 +2,8 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { Trophy, Users, Zap } from "lucide-react";
 import { useRef } from "react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import imgHackathonGroup from "../../assets/images/hackathon-group.jpg";
-import imgHackathonBadges from "../../assets/images/hackathon-badges.jpg";
+import imgHackathonGroup from "../../assets/images/hackathon-group.webp";
+import imgHackathonBadges from "../../assets/images/hackathon-badges.webp";
 
 export function Hackathons() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -42,6 +42,7 @@ export function Hackathons() {
                   src={imgHackathonGroup}
                   alt="Snoonu Hackathon team group photo"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </motion.div>
             </motion.div>
@@ -84,6 +85,7 @@ export function Hackathons() {
               src={imgHackathonBadges}
               alt="Snoonu Hackathon participant badges"
               className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-700"
+              loading="lazy"
             />
           </motion.div>
 

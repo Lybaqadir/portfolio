@@ -2,9 +2,9 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { Briefcase, Calendar, MapPin, Sparkles, Award, Code2, GraduationCap, Heart } from "lucide-react";
 import { useRef } from "react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import imgExp1 from "../../assets/images/experience-alexmind.jpg";
-import imgExp4 from "../../assets/images/experience-websummit.jpg";
-import imgExp5 from "../../assets/images/experience-volunteering.jpg";
+import imgExp1 from "../../assets/images/experience-alexmind.webp";
+import imgExp4 from "../../assets/images/experience-websummit.webp";
+import imgExp5 from "../../assets/images/experience-volunteering.webp";
 
 function ParallaxPhoto({
   src,
@@ -29,6 +29,7 @@ function ParallaxPhoto({
           src={src}
           alt={alt}
           className={fit === "contain" ? "w-full h-full object-contain p-6" : "w-full h-full object-cover"}
+          loading="lazy"
         />
       </motion.div>
     </div>

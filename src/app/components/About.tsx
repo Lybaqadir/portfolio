@@ -2,8 +2,8 @@ import { motion, useScroll, useTransform, useInView } from "motion/react";
 import { Code2, BrainCircuit, Lightbulb, Rocket } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import imgAbout from "../../assets/images/about-main.jpg";
-import imgSecondary from "../../assets/images/about-secondary.jpg";
+import imgAbout from "../../assets/images/about-main.webp";
+import imgSecondary from "../../assets/images/about-secondary.webp";
 
 const GREETING = "Hello, I'm Lyba Qadir";
 const TYPE_SPEED_MS = 90;
@@ -106,6 +106,7 @@ export function About() {
                   src={imgAbout}
                   alt="Lyba Qadir - Software Engineering Student"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </motion.div>
             </motion.div>
@@ -157,6 +158,7 @@ export function About() {
               src={imgSecondary}
               alt="Lyba Qadir"
               className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-700"
+              loading="lazy"
             />
           </motion.div>
 
